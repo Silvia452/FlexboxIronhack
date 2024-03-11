@@ -1,0 +1,286 @@
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Encabezado */
+header {
+    background-color: pink;
+    padding: 20px;
+    width:100%;
+    height:80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media only screen and (min-width: 1024px) {
+    main {
+        width: 80%;
+    }
+
+    #foto1, #foto2, #foto3{
+        height: auto;
+        width:25%;
+    }
+
+    main>section {
+        width: 100%;
+    }
+
+    body > div {
+        display: flex;
+    }
+
+    body > div > ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        list-style: none;
+        height: 180px;
+        min-width: 15%;
+        margin:0;
+        padding: 0;
+    }
+
+    body > div > ul > li > a {
+        text-decoration: none;
+    }
+
+    #seccion3, .navegation {
+        display: none;
+    }
+
+
+    #MenuH2 {
+        text-align: center;
+        padding: 10px;
+        width: 100%;
+
+    }
+
+    #nav-final {
+        display: none;
+        margin:0;
+        padding: 0;
+    }
+
+    #nav-2 {
+        display: flex;
+        position: fixed;
+        flex-direction: column;
+        bottom: 43px;
+        left: 43px;
+        gap:30px;
+
+    }
+
+    #seccion1 > h2 {
+        padding: 12px;
+    }
+
+    #seccion1 > div > div > img {
+        width: 50%;
+    }
+
+    #seccion2 > h2 {
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+
+
+    #seccion2 > h4, #seccion2 > p, #seccion2 > .imagenes{
+        display: none;
+    }
+
+
+    #seccion2 > #seccion-fotos {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    #seccion2 > #seccion-fotos > div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #seccion2 > #seccion-fotos > #foto2 {
+        flex-direction: column-reverse;
+    }
+
+    #seccion2 > #seccion-fotos > div > button {
+        align-self: center;
+        width: 100%;
+        padding: 10px;
+    }
+
+    #seccion2 #foto1, #seccion2 #foto2 {
+        gap: 30px;
+    }
+
+    #seccion2  #foto3  button {
+        margin-left: auto;
+    }
+
+    #seccion1  .imagenes, #seccion1 > p, #seccion1 > h4 {
+        display: none;
+    }
+
+    #seccion1 > div {
+        display: flex;
+        justify-content: center;
+    }
+
+    #seccion1 > div > div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 400px;
+    }
+
+    #seccion1 > div > div > p {
+        text-align: center;
+    }
+
+    #seccion2 {
+        margin-top: 50px;
+    }
+
+    #autor1 > h4 {
+        width: 100%;
+        text-align: start;
+    }
+
+    #autor2 > h4 {
+        width: 100%;
+        text-align: center;
+    }
+
+    #autor3 > h4 {
+        width: 100%;
+        text-align: end;
+
+    }
+
+
+
+}
+
+
+@media only screen and (max-width: 767px){
+    .secciones{
+        display: none;
+    }
+
+    #nav-2{
+        display: none;
+    }
+
+    #MenuH2{
+        display: none;
+    }
+
+    ul{
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 30px;
+        border-bottom: 1px solid black;
+    }
+
+    li a{
+        text-decoration: none;
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+        margin:0 18px;
+        gap: 25px;
+        padding-bottom: 200px;
+        height: 100%;
+    }
+
+    section  p{
+        text-align: center;
+    }
+
+    #nav-final{
+        position: fixed;
+        border:6px solid black;
+        bottom: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        height: 150px;
+        width: 80px;
+        background-color: pink;
+
+    }
+
+    #seccion1{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 50%;
+        gap:10px;
+    }
+
+    #seccion2{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #seccion2 > h2{
+        display: none;
+    }
+
+    #seccion3{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 50%;
+        margin-left: auto;
+        gap:15px;
+    }
+
+    #seccion1 > .imagenes{
+        align-self: center;
+        height: 50%;
+    }
+
+    #seccion2 > .imagenes,#seccion3 > .imagenes {
+        width: 100%;
+    }
+
+
+    #seccion1  img, #seccion2  img, #seccion3  img  {
+        width: 100%;
+    }
+
+    #seccion2  h4{
+        width: 100%;
+        text-align: center;
+    }
+
+    #seccion3   h4{
+        width: 100%;
+        text-align: end;
+    }
+
+
+
+}
+
+
